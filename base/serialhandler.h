@@ -4,9 +4,8 @@
 #include <QObject>
 #include <QThread>
 #include <QDebug>
-#include <QMutexLocker>
 #include <QSerialPort>
-
+#include <QWaitCondition>
 
 // http://stackoverflow.com/questions/15103599/qt-serial-port-reading-data-consistently
 
@@ -22,10 +21,9 @@ public:
     void run();
     void stop();
 protected:
-
+public slots:
 private:
-    bool m_stop;
-    QMutex m_mutex;
+    bool t_stop;
     void readData();
     int state = 0;
     QSerialPort port;

@@ -29,12 +29,17 @@ set(SOURCES
    mainwindow.cpp
    gamepadmonitor.cpp
    serialhandler.cpp
+   testconnectthread.cpp
+   dummyConnect.cpp
+
 )
 
 set(HEADERS
     mainwindow.h
     gamepadmonitor.h
     serialhandler.h
+    testconnectthread.h
+    dummyConnect.h
 )
 
 # Set forms
