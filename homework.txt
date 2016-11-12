@@ -1,0 +1,6 @@
+end result:
+create a class of signals and slots that will take input from ui and send (not a thread). Send functions are auto generated
+all these hook ups are in this function.
+
+todo:
+create example signal being called, and then a slot being called
